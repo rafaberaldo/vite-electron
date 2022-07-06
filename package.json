@@ -1,0 +1,36 @@
+{
+  "name": "vite-electron",
+  "version": "0.0.0",
+  "main": "electron/main.js",
+  "author": {
+    "name": "Rafael Beraldo"
+  },
+  "description": "Source from the Dev.to post",
+  "keywords": [
+    "electron",
+    "react",
+    "vite",
+    "tutorial"
+  ],
+  "license": "MIT",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "electron:dev": "node scripts/dev.mjs",
+    "electron:build": "npm run build && electron-builder"
+  },
+  "dependencies": {
+    "react": "^18.0.0",
+    "react-dom": "^18.0.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "@vitejs/plugin-react": "^1.3.0",
+    "electron": "^19.0.7",
+    "electron-builder": "^23.1.0",
+    "typescript": "^4.6.3",
+    "vite": "^2.9.9"
+  }
+}
